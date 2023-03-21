@@ -753,7 +753,7 @@ button {
 	
 }
 .modal-field {
-	max-height: 138px;
+	
 	
 	
 }
@@ -792,6 +792,7 @@ button {
 	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	resize: none;
 	padding: 8px 16px;
+	display: block;
 }
 .modal-massage::placeholder {
 	color: rgba(117, 117, 117, 0.5);
@@ -804,6 +805,7 @@ button {
 .modal-massage:focus {
 	border: 1px solid #4d5ae5;
 	outline: none;
+	
 }
 
 .modal-check {
