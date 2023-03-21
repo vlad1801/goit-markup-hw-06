@@ -52,7 +52,9 @@
 			<section class="hero">
 				<div class="conteiner">
 					<h1 class="hero-title">Effective Solutions for Your Business </h1>
-					<button type="button" class="hero-icon mybtn" data-modal-open><span class="hero-text">Order Service</span></button>
+					<button type="button" class="hero-icon mybtn" data-modal-open
+						><span class="hero-text">Order Service</span></button
+					>
 				</div>
 			</section>
 			<!--SPD-->
@@ -375,12 +377,35 @@
 						<li class="svg-item">
 							<a href="" class="svg-footer">
 								<svg class="svg-icon" width="16px" height="16px">
-									<use href="images/symbol-defs.svg#icon-linkedin"></use>
+									<use href="./images/symbol-defs.svg#icon-linkedin"></use>
 								</svg>
 							</a>
 						</li>
 					</ul>
 				</div>
+
+				<form action="" class="footer-form">
+					<label for="">
+						<p class="footer-modal-text">Subscribe</p>
+
+						<span class="modal-span">
+							<input
+								class="footer-modal-icon"
+								name="user-telefon"
+								type="tel"
+								class="modal-input"
+								required
+								placeholder="E-mail"
+							/>
+						</span>
+					</label>
+					<button class="footer-modal-btn mybtn">
+						Subscribe
+						<svg class="footer-modal-svg">
+							<use href="./images/bot.svg#icon-Frame-3"></use>
+						</svg>
+					</button>
+				</form>
 			</div>
 		</footer>
 		<div class="backdrop is-hidden" data-modal>
@@ -389,8 +414,75 @@
 					<svg class="modal-close-btn-icon" width="8" height="8">
 						<use href="./images/symbol-defs.svg#icon-close-black-18dp-2-1"></use>
 					</svg>
-					
 				</button>
+				<p class="modal-text">Leave your contacts and we will call you back</p>
+
+				<form class="madal-form">
+					<label class="modal-field">
+						<span class="modal-desc">Name</span>
+						<span class="modal-span">
+							<input
+								name="user-name"
+								type="text"
+								class="modal-input"
+								required
+								pattern="[a-zA-Zа-яА-Я]+$"
+								minlength="2"
+							/>
+							<svg class="modal-svg">
+								<use href="./images/bot.svg#icon-person-black-18dp-1"></use>
+							</svg>
+						</span>
+					</label>
+					<label class="modal-field">
+						<span class="modal-desc">Phone</span>
+						<span class="modal-span">
+							<input
+								name="user-telefon"
+								type="tel"
+								class="modal-input"
+								required
+								pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+								title="xxx-xxx-xx-xx"
+							/>
+							<svg class="modal-svg">
+								<use href="./images/bot.svg#icon-phone-black-18dp-1"></use>
+							</svg>
+						</span>
+					</label>
+					<label class="modal-field">
+						<span class="modal-desc">Email</span>
+						<span class="modal-span">
+							<input name="user-mail" type="text" class="modal-input" required />
+							<svg class="modal-svg">
+								<use href="./images/bot.svg#icon-email-black-18dp-1"></use>
+							</svg>
+						</span>
+					</label>
+					<label class="modal-field">
+						<span class="modal-desc">Comment</span>
+						<textarea
+							name="user-massage"
+							cols="30"
+							rows="10"
+							class="modal-massage"
+							placeholder="Введите текст"
+						></textarea>
+					</label>
+					<input name="user-policy" id="user-policy" type="checkbox" class="modal-check visually-hidden" />
+					<label for="user-policy" class="modal-desc-icon">
+						<span  class="modal-span-icon">
+							<svg class="modal-desc-icon-svg">
+								<use href="./images/bot.svg#icon-Vector-1"></use>
+							</svg>
+						</span>
+						
+
+						I accept the terms and conditions of the&nbsp
+						<a href="" class="modal-link">Privacy Policy</a>
+					</label>
+					<button type="submit" class="modal-btn">Send</button>
+				</form>
 			</div>
 		</div>
 
