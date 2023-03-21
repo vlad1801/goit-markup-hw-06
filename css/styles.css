@@ -92,6 +92,10 @@ button {
 	color: var(--white-color);
 	background: var(--OCEAN-color);
 }
+.modal-btn:focus {
+	color: var(--white-color);
+	background: var(--OCEAN-color);
+}
 .modal-mybtn:focus {
 	color: var(--white-color);
 	background: var(--OCEAN-color);
@@ -695,9 +699,10 @@ button {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 408px;
-	height: 576px;
+	height: 584px;
 	background-color: var(--white-color);
 	border-radius: 4px;
+	padding: 72px 24px 24px 24px;
 }
 .modal-close-btn {
 	position: absolute;
@@ -713,6 +718,7 @@ button {
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	padding: 0;
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	
 }
 .modal-close-btn .modal-close-btn-icon {
 	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -739,13 +745,17 @@ button {
 .modal-field:not(:last-child) {
 	margin-bottom: 8px;
 }
+
 .madal-form {
-	padding: 0px 24px 136px 24px;
+	
 	display: flex;
 	flex-direction: column;
 	
 }
 .modal-field {
+	max-height: 138px;
+	
+	
 }
 .modal-desc {
 	font-weight: 400;
@@ -753,7 +763,8 @@ button {
 	line-height: 1.33;
 	color: var(--LIGHT-SLATE-color);
 	letter-spacing: 0.04em;
-	display: block;
+	display: flex;
+	
 	margin-bottom: 4px;
 }
 .modal-input {
@@ -801,7 +812,7 @@ button {
 .modal-desc-icon {
 	display: flex;
 	align-items: center;
-	margin-bottom: 24px;
+	
 	font-weight: 400;
 	font-size: 12px;
 	line-height: 1.33;
@@ -815,9 +826,8 @@ button {
 	height: 8px;
 	
 	
-	fill: #f4f4fd;
-	
-	
+	fill: var(--white-color);
+	position: absolute;
 	
 	
 	
@@ -828,7 +838,12 @@ button {
 }
 
 .modal-span-icon {
-	
+	display: inline-flex; 
+	align-items: center; 
+	justify-content: center;
+	width: 16px;
+	height: 16px;
+	position: absolute;
 	
 }
 .modal-desc-icon::before {
@@ -849,15 +864,19 @@ button {
 .modal-check:checked + .modal-desc-icon::before {
 	background-color: var(--Iris-color);
 	border: 1.25px solid #404BBF;
+	
 
 }
 .modal-check:focus + .modal-desc-icon::before {
+	background-color: var(--Iris-color);
+	border: 1.25px solid #404BBF;
+	
 	
 }
 .modal-btn {
 }
 .modal-text {
-	padding: 72px 24px 0px 24px;
+	
 	margin-bottom: 16px;
 	font-family: "Roboto";
 	font-style: normal;
@@ -883,6 +902,7 @@ button {
 .modal-span {
 	position: relative;
 	display: block;
+	
 }
 .modal-input:focus + .modal-svg {
 	fill: #404bbf;
@@ -903,25 +923,34 @@ button {
 	align-self: center;
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	
+	margin-top: 24px;
+	
 	
 }
 .footer-form {
+	
+	
+	
+	margin-left: 80px;
+}
+.footer-form-modal {
 	display: flex;
-	padding-left: 80px;
 }
-.footer-modal-text {
-	margin-bottom: 16px;
-}
+
 .footer-modal-icon {
 	border: 1px solid rgba(255, 255, 255, 0.3);
 
 	border-radius: 4px;
 	width: 264px;
 	height: 40px;
-	margin-right: 24px;
+	
 	outline: none;
-	background-color: var(--Navyblue-color);
+	background: rgba(0, 0, 0, 0);
 	padding-left: 16px;
+	color: #ffffff;
+}
+.footer-modal-icon::placeholder {
+	
 }
 .footer-modal-btn {
 	width: 165px;
@@ -935,6 +964,8 @@ button {
 
 	display: flex;
 	align-items: center;
+	flex-direction: row;
+	justify-content: center;
 
 	letter-spacing: 0.04em;
 
@@ -942,17 +973,28 @@ button {
 	background-color: var(--Iris-color);
 	border-radius: 4px;
 	border: var(--Iris-color);
-	margin-top: 40px;
-	padding-left: 24px;
+	
+	margin-left: 24px;
+}
+.modal-box{
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
 }
 .footer-modal-text {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.5;
+	display: flex;
+	
+
+	
 
 	letter-spacing: 0.02em;
 
 	color: var(--white-color);
+	margin-bottom: 16px;
 }
 .footer-modal-svg {
 	width: 24px;
